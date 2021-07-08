@@ -1,5 +1,5 @@
 let logo = document.querySelector('.logo svg');
-if (window.location.pathname === '/blog.html' || window.location.pathname === '/cart.html' || window.location.pathname === '/product-one.html' || window.location.pathname === '/catalog.html') {
+if (window.location.pathname == '/blog.html' || window.location.pathname == '/cart.html' || window.location.pathname === '/product-one.html' || window.location.pathname == '/catalog.html') {
   logo.style.fill = "#2A364E";
 }
 
