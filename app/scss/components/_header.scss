@@ -28,6 +28,7 @@
       order: 2;
       padding-left: 75px;
       z-index: 5;
+
       svg {
         fill: $mainBlue !important;
       }
@@ -35,12 +36,6 @@
 
     @include r(480) {
       padding-left: 65px;
-    }
-
-    &--home {
-      svg {
-        fill: $mainBlue !important;
-      }
     }
 
     svg {

@@ -1,8 +1,4 @@
 let logo = document.querySelector('.logo svg');
-if (window.location.pathname == '/blog.html' || window.location.pathname == '/cart.html' || window.location.pathname === '/product-one.html' || window.location.pathname == '/catalog.html') {
-  logo.style.fill = "#2A364E";
-}
-
 
 const burger = document.querySelector('.menu__burger');
 const menu = document.querySelector('.menu__list');
@@ -23,15 +19,11 @@ menuLink.forEach(function (link) {
 const header = document.querySelector('.header')
 
 window.addEventListener('scroll', function () {
-  logo.style.fill = "#2A364E";
   let scrollDistance = window.scrollY;
   if (scrollDistance >= 50) {
     header.classList.add('header--active');
   } else {
     header.classList.remove('header--active');
-    if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
-      logo.style.fill = "#fff";
-    }
   }
 })
 
@@ -158,6 +150,10 @@ $(function () {
   $('.form-color__select').styler()
   $('.form-sort__select').styler()
   $('.form-ship__select').styler()
+
+  if (location.pathname == '/blog.html' || location.pathname == '/catalog.html' || location.pathname == '/product-one.html' || location.pathname == '/cart.html') {
+    $('.logo svg').css('fill', '#2A364E');
+  }
 
 })
 
