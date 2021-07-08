@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,753 +8,751 @@
   <link rel="stylesheet" href="css/style.min.css">
   <title>Catalog</title>
 </head>
-
 <body class="main">
+  
 
+<header class="header">
+  <div class="container">
+    <nav class="menu">
 
-  <header class="header">
-    <div class="container">
-      <nav class="menu">
+      <a class="logo" href="index.html">
+  <svg width="75" height="17">
+    <use xlink:href="images/sprite.svg#logo"></use>
+  </svg>
+</a>
+      <button class="menu__burger">
+        <svg width="20" height="17">
+          <use xlink:href="images/sprite.svg#burger"></use>
+        </svg>
+        <span class="sr-only">
+          button for menu
+        </span>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="catalog.html">
+            Catalog
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="blog.html">
+            Blog
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            Contact
+          </a>
+        </li>
+      </ul>
 
-        <a class="logo" href="index.html">
-          <svg width="75" height="17">
-            <use xlink:href="images/sprite.svg#logo"></use>
+      <div class="menu__inner">
+        <button class="menu__button">
+          <svg width="17" height="17">
+            <use xlink:href="images/sprite.svg#search-icon"></use>
           </svg>
-        </a>
-        <button class="menu__burger">
-          <svg width="20" height="17">
-            <use xlink:href="images/sprite.svg#burger"></use>
-          </svg>
-          <span class="sr-only">
-            button for menu
-          </span>
+          <span class="sr-only">button for searching</span>
         </button>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="index.html">
-              Home
+        <a class="menu__btn-link" href="cart.html">
+          <svg width="25" height="25">
+            <use xlink:href="images/sprite.svg#cart-icon"></use>
+          </svg>
+          <span class="sr-only">link to cart</span>
+          <span class="menu__num">3</span>  
+        </a>
+        <button class="menu__button">
+          <svg fill="#fff" width="19" height="19">
+            <use xlink:href="images/sprite.svg#heart-icon"></use>
+          </svg>
+          <span class="sr-only">button for wishes</span>
+        </button>
+      </div>
+
+    </nav>
+  </div>
+</header>
+<section class="catalog">
+  <h1 class="sr-only">
+    Catalog
+  </h1>
+  <div class="container">
+    
+    <div class="catalog__wrapper">
+      <div class="filter-furniture">
+  <button class="filter-furniture__button-close" type="button"></button>
+  <ul class="filter-furniture__main-list">
+    <li><a href="#">Seating Collections</a></li>
+
+    <li><a href="#">Bedroom</a></li>
+
+    <li><a href="#">Living room</a></li>
+
+    <li><a href="#">Kitchen</a></li>
+
+    <li><a href="#">Small Space Furniture</a></li>
+
+    <li><a href="#">Bathroom Vanities</a></li>
+
+    <li><a href="#">Outdoor</a></li>
+
+    <li><a href="#">Home Office</a></li>
+
+    <li><a href="#">Entryway Furniture</a></li>
+
+    <li><a href="#">Custom Furniture</a></li>
+  </ul>
+
+  <div class="filter-furniture__item filter-furniture__item--color">
+    <h3 class="filter-furniture__subtitle" data-filter="#filter1">
+      color
+    </h3>
+    <ul class="filter-furniture__list" id="filter1">
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link filter-furniture__link--limestone" href="#">
+          <span class="filter-furniture__color"></span>
+          <span class="filter-furniture__name">Limestone</span>
+        </a>
+      </li>
+
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link filter-furniture__link--duckgreen" href="#">
+          <span class="filter-furniture__color"></span>
+          <span class="filter-furniture__name">Duck Green</span>
+        </a>
+      </li>
+
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link filter-furniture__link--burgundy" href="#">
+          <span class="filter-furniture__color"></span>
+          <span class="filter-furniture__name">Burgundy</span>
+        </a>
+      </li>
+
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link filter-furniture__link--brown" href="#">
+          <span class="filter-furniture__color"></span>
+          <span class="filter-furniture__name">Classic Brown</span>
+        </a>
+      </li>
+
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link filter-furniture__link--pine" href="#">
+          <span class="filter-furniture__color"></span>
+          <span class="filter-furniture__name">Pine Forest</span>
+        </a>
+      </li>
+
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link filter-furniture__link--beige" href="#">
+          <span class="filter-furniture__color"></span>
+          <span class="filter-furniture__name">Bar Harbor Beige</span>
+        </a>
+      </li>
+
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link filter-furniture__link--mustard" href="#">
+          <span class="filter-furniture__color"></span>
+          <span class="filter-furniture__name"> Mustard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="filter-furniture__item" >
+    <h3 class="filter-furniture__subtitle" data-filter="#filter2">
+      material
+    </h3>
+    <ul class="filter-furniture__list" id="filter2">
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link" href="#">
+          Ash
+        </a>
+      </li>
+
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link" href="#">
+          Beech
+        </a>
+      </li>
+
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link" href="#">
+          Mahogany
+        </a>
+      </li>
+
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link" href="#">
+          Maple
+        </a>
+      </li>
+
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link" href="#">
+          Walnut
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="filter-furniture__item filter-furniture__item--price">
+    <h3 class="filter-furniture__subtitle"  data-filter="#filter3">
+      Price
+    </h3>
+    <ul class="filter-furniture__list" id="filter3">
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link" href="#">
+          usd 50 - usd 500
+          <span>(17)</span>
+        </a>
+      </li>
+
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link" href="#">
+          usd 500 - usd 1500
+          <span>(10)</span>
+        </a>
+      </li>
+
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link" href="#">
+          usd 1500 - usd 3000
+          <span>(25)</span>
+        </a>
+      </li>
+
+      <li class="filter-furniture__item">
+        <a class="filter-furniture__link" href="#">
+          usd 3000 - usd 5000
+          <span>(15)</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+      <div class="catalog__content">
+  <ul class="breadcrumbs">
+    <li class="breadcrumbs__item">
+      <a class="breadcrumbs__link" href="#">
+        Home
+      </a>
+    </li>
+    <li class="breadcrumbs__item">
+      <a class="breadcrumbs__link" href="#">
+        Catalog
+      </a>
+    </li>
+    <li class="breadcrumbs__item">
+      <span>
+        Furniture
+      </span>
+    </li>
+
+  </ul>
+  <div class="catalog__inner">
+    <span class="catalog__filter-btn">
+      Filter
+    </span>
+    <div class="catalog__result">
+      Furniture
+      <span>94 results</span>
+    </div>
+    <div class="catalog__wrap">
+      <span> Sort by:</span>
+      <form class="form-sort">
+  <select class="form-sort__select" name="sort">
+    <option class="form-sort__option" value="">
+      Popularity
+    </option>
+    <option class="form-sort__option" value="">
+      Price descending
+    </option>
+    <option class="form-sort__option" value="">
+      Price ascending
+    </option>
+    <option class="form-sort__option" value="">
+      Customer rating
+    </option>
+  </select>
+</form>
+    </div>
+  </div>
+  <ul class="catalog__list">
+    <li class="catalog__item">
+      <article class="product-card">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod1.png" alt="photo of product">
+          </div>
+          <h3 class="product-card__title">
+            Mirren Chaise Sectional
+          </h3>
+          <span class="product-card__price">
+            USD 3621.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod2.png" alt="photo of product">
+          </div>
+          <h3 class="product-card__title">
+            Mirren Modular Corner Chair
+          </h3>
+          <span class="product-card__price">
+            USD 7226.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card product-card--sale">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod3.png" alt="photo of product">
+            <span class="product-card__extra">sale</span>
+          </div>
+          <h3 class="product-card__title">
+            Sherpa Atticus Armchair
+          </h3>
+          <span class="product-card__new-price">
+            USD 1735.00
+          </span>
+          <span class="product-card__price">
+            USD 2335.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod4.png" alt="photo of product">
+          </div>
+          <h3 class="product-card__title">
+            Isolde Hexagonal Ottoman
+          </h3>
+          <span class="product-card__price">
+            USD 1248.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod5.png" alt="photo of product">
+          </div>
+          <h3 class="product-card__title">
+            Lyre Chesterfield Sofa
+          </h3>
+          <span class="product-card__price">
+            USD 1977.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod6.png" alt="photo of product">
+          </div>
+          <h3 class="product-card__title">
+            Sherpa Atticus Armchair
+          </h3>
+          <span class="product-card__price">
+            USD 3100.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod7.png" alt="photo of product">
+          </div>
+          <h3 class="product-card__title">
+            Rivona Chair
+          </h3>
+          <span class="product-card__price">
+            USD 1690.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod8.png" alt="photo of product">
+          </div>
+          <h3 class="product-card__title">
+            Edlyn Leather Bench
+          </h3>
+          <span class="product-card__price">
+            USD 1890.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod9.png" alt="photo of product">
+          </div>
+          <h3 class="product-card__title">
+            Sherpa Atticus Armchair
+          </h3>
+          <span class="product-card__price">
+            USD 2130.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card product-card--new">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod10.png" alt="photo of product">
+            <div class="product-card__extra">
+              new
+            </div>
+          </div>
+          <h3 class="product-card__title">
+            Gwinnette Chaise
+          </h3>
+          <span class="product-card__price">
+            USD 1648.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod11.png" alt="photo of product">
+          </div>
+          <h3 class="product-card__title">
+            Relaxed Saguaro Sofa
+          </h3>
+          <span class="product-card__price">
+            USD 4400.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card product-card--new">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod12.png" alt="photo of product">
+            <span class="product-card__extra">
+              new
+            </span>
+          </div>
+          <h3 class="product-card__title">
+            Sherpa Atticus Armchair
+          </h3>
+          <span class="product-card__price">
+            USD 1835.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod13.png" alt="photo of product">
+          </div>
+          <h3 class="product-card__title">
+            Modular One-Arm Loveseat
+          </h3>
+          <span class="product-card__price">
+            USD 3400.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card product-card--sale">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod14.png" alt="photo of product">
+            <span class="product-card__extra">sale</span>
+          </div>
+          <h3 class="product-card__title">
+            Mina Bench
+          </h3>
+          <span class="product-card__new-price">
+            USD 1300.00
+          </span>
+          <span class="product-card__price">
+            USD 1780.00
+          </span>
+        </a>
+      </article>
+    </li>
+
+    <li class="catalog__item">
+      <article class="product-card">
+        <a class="product-card__link" href="#">
+          <div class="product-card__wrapper">
+            <img class="product-card__img" src="images/content/catalog/prod15.png" alt="photo of product">
+          </div>
+          <h3 class="product-card__title">
+            Havana Chair
+          </h3>
+          <span class="product-card__price">
+            USD 2935.00
+          </span>
+        </a>
+      </article>
+    </li>
+  </ul>
+  <ul class="pagination">
+  <li class="pagination__item">
+    <span>
+      1
+    </span>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">
+      2
+    </a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">
+      3
+    </a>
+  </li>
+  <li class="pagination__next">
+      Next
+  </li>
+</ul>
+</div>
+
+
+     
+    </div>
+  </div>
+  <div class="overlay"></div>
+</section>
+
+<div class="container">
+<div class="sub">
+    <div class="sub__text">
+      <p>
+        Subscribe for Anthropologie emails and hear 
+        about the latest and greatest from our family of brands!
+      </p>
+    </div>
+    <form class="form-sub">
+      <label class="form-sub__label sr-only" for="email"></label>
+      <input class="form-sub__input" type="email" id="email" name="email" placeholder="Email:">
+      <button class="form-sub__button button" type="submit">
+        subscribe
+      </button>
+    </form>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+
+      <div class="footer__payment">
+        <a class="logo" href="index.html">
+  <svg width="75" height="17">
+    <use xlink:href="images/sprite.svg#logo"></use>
+  </svg>
+</a>
+        <p>
+          Stylish designs to discover daily
+        </p>
+        <ul class="footer__pay">
+          <li class="footer__pay-item">
+            <svg width="58" height="65">
+              <use xlink:href="images/sprite.svg#Visa"></use>
+            </svg>
+            <span class="sr-only">pay by visa</span>
+          </li>
+          <li class="footer__pay-item">
+            <svg width="58" height="65">
+              <use xlink:href="images/sprite.svg#PayPal"></use>
+            </svg>
+            <span class="sr-only">pay by paypal</span>
+          </li>
+          <li class="footer__pay-item">
+            <svg width="58" height="65">
+              <use xlink:href="images/sprite.svg#Mastercard"></use>
+            </svg>
+            <span class="sr-only">pay by mastercard</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__element">
+       <span class="footer__subtitle">
+          <a class="footer__link" href="#">
+            Help
+          </a>
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Returns & Exchanges
             </a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="catalog.html">
-              Catalog
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Shipping
             </a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="blog.html">
-              Blog
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              Contact
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Customer Service
             </a>
           </li>
         </ul>
+      </div>
 
-        <div class="menu__inner">
-          <button class="menu__button">
-            <svg width="17" height="17">
-              <use xlink:href="images/sprite.svg#search-icon"></use>
-            </svg>
-            <span class="sr-only">button for searching</span>
-          </button>
-          <a class="menu__btn-link" href="cart.html">
-            <svg width="25" height="25">
-              <use xlink:href="images/sprite.svg#cart-icon"></use>
-            </svg>
-            <span class="sr-only">link to cart</span>
-            <span class="menu__num">3</span>
+      <div class="footer__element">
+        <span class="footer__subtitle">
+          <a class="footer__link" href="#">
+            About Us
           </a>
-          <button class="menu__button">
-            <svg fill="#fff" width="19" height="19">
-              <use xlink:href="images/sprite.svg#heart-icon"></use>
-            </svg>
-            <span class="sr-only">button for wishes</span>
-          </button>
-        </div>
+        </span>
+        <ul class="footer__list">
 
-      </nav>
-    </div>
-  </header>
-  <section class="catalog">
-    <h1 class="sr-only">
-      Catalog
-    </h1>
-    <div class="container">
-
-      <div class="catalog__wrapper">
-        <div class="filter-furniture">
-          <button class="filter-furniture__button-close" type="button"></button>
-          <ul class="filter-furniture__main-list">
-            <li><a href="#">Seating Collections</a></li>
-
-            <li><a href="#">Bedroom</a></li>
-
-            <li><a href="#">Living room</a></li>
-
-            <li><a href="#">Kitchen</a></li>
-
-            <li><a href="#">Small Space Furniture</a></li>
-
-            <li><a href="#">Bathroom Vanities</a></li>
-
-            <li><a href="#">Outdoor</a></li>
-
-            <li><a href="#">Home Office</a></li>
-
-            <li><a href="#">Entryway Furniture</a></li>
-
-            <li><a href="#">Custom Furniture</a></li>
-          </ul>
-
-          <div class="filter-furniture__item filter-furniture__item--color">
-            <h3 class="filter-furniture__subtitle" data-filter="#filter1">
-              color
-            </h3>
-            <ul class="filter-furniture__list" id="filter1">
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link filter-furniture__link--limestone" href="#">
-                  <span class="filter-furniture__color"></span>
-                  <span class="filter-furniture__name">Limestone</span>
-                </a>
-              </li>
-
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link filter-furniture__link--duckgreen" href="#">
-                  <span class="filter-furniture__color"></span>
-                  <span class="filter-furniture__name">Duck Green</span>
-                </a>
-              </li>
-
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link filter-furniture__link--burgundy" href="#">
-                  <span class="filter-furniture__color"></span>
-                  <span class="filter-furniture__name">Burgundy</span>
-                </a>
-              </li>
-
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link filter-furniture__link--brown" href="#">
-                  <span class="filter-furniture__color"></span>
-                  <span class="filter-furniture__name">Classic Brown</span>
-                </a>
-              </li>
-
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link filter-furniture__link--pine" href="#">
-                  <span class="filter-furniture__color"></span>
-                  <span class="filter-furniture__name">Pine Forest</span>
-                </a>
-              </li>
-
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link filter-furniture__link--beige" href="#">
-                  <span class="filter-furniture__color"></span>
-                  <span class="filter-furniture__name">Bar Harbor Beige</span>
-                </a>
-              </li>
-
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link filter-furniture__link--mustard" href="#">
-                  <span class="filter-furniture__color"></span>
-                  <span class="filter-furniture__name"> Mustard</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="filter-furniture__item">
-            <h3 class="filter-furniture__subtitle" data-filter="#filter2">
-              material
-            </h3>
-            <ul class="filter-furniture__list" id="filter2">
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link" href="#">
-                  Ash
-                </a>
-              </li>
-
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link" href="#">
-                  Beech
-                </a>
-              </li>
-
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link" href="#">
-                  Mahogany
-                </a>
-              </li>
-
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link" href="#">
-                  Maple
-                </a>
-              </li>
-
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link" href="#">
-                  Walnut
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="filter-furniture__item filter-furniture__item--price">
-            <h3 class="filter-furniture__subtitle" data-filter="#filter3">
-              Price
-            </h3>
-            <ul class="filter-furniture__list" id="filter3">
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link" href="#">
-                  usd 50 - usd 500
-                  <span>(17)</span>
-                </a>
-              </li>
-
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link" href="#">
-                  usd 500 - usd 1500
-                  <span>(10)</span>
-                </a>
-              </li>
-
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link" href="#">
-                  usd 1500 - usd 3000
-                  <span>(25)</span>
-                </a>
-              </li>
-
-              <li class="filter-furniture__item">
-                <a class="filter-furniture__link" href="#">
-                  usd 3000 - usd 5000
-                  <span>(15)</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="catalog__content">
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                Home
-              </a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                Catalog
-              </a>
-            </li>
-            <li class="breadcrumbs__item">
-              <span>
-                Furniture
-              </span>
-            </li>
-
-          </ul>
-          <div class="catalog__inner">
-            <span class="catalog__filter-btn">
-              Filter
-            </span>
-            <div class="catalog__result">
-              Furniture
-              <span>94 results</span>
-            </div>
-            <div class="catalog__wrap">
-              <span> Sort by:</span>
-              <form class="form-sort">
-                <select class="form-sort__select" name="sort">
-                  <option class="form-sort__option" value="">
-                    Popularity
-                  </option>
-                  <option class="form-sort__option" value="">
-                    Price descending
-                  </option>
-                  <option class="form-sort__option" value="">
-                    Price ascending
-                  </option>
-                  <option class="form-sort__option" value="">
-                    Customer rating
-                  </option>
-                </select>
-              </form>
-            </div>
-          </div>
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod1.png" alt="photo of product">
-                  </div>
-                  <h3 class="product-card__title">
-                    Mirren Chaise Sectional
-                  </h3>
-                  <span class="product-card__price">
-                    USD 3621.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod2.png" alt="photo of product">
-                  </div>
-                  <h3 class="product-card__title">
-                    Mirren Modular Corner Chair
-                  </h3>
-                  <span class="product-card__price">
-                    USD 7226.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card product-card--sale">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod3.png" alt="photo of product">
-                    <span class="product-card__extra">sale</span>
-                  </div>
-                  <h3 class="product-card__title">
-                    Sherpa Atticus Armchair
-                  </h3>
-                  <span class="product-card__new-price">
-                    USD 1735.00
-                  </span>
-                  <span class="product-card__price">
-                    USD 2335.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod4.png" alt="photo of product">
-                  </div>
-                  <h3 class="product-card__title">
-                    Isolde Hexagonal Ottoman
-                  </h3>
-                  <span class="product-card__price">
-                    USD 1248.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod5.png" alt="photo of product">
-                  </div>
-                  <h3 class="product-card__title">
-                    Lyre Chesterfield Sofa
-                  </h3>
-                  <span class="product-card__price">
-                    USD 1977.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod6.png" alt="photo of product">
-                  </div>
-                  <h3 class="product-card__title">
-                    Sherpa Atticus Armchair
-                  </h3>
-                  <span class="product-card__price">
-                    USD 3100.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod7.png" alt="photo of product">
-                  </div>
-                  <h3 class="product-card__title">
-                    Rivona Chair
-                  </h3>
-                  <span class="product-card__price">
-                    USD 1690.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod8.png" alt="photo of product">
-                  </div>
-                  <h3 class="product-card__title">
-                    Edlyn Leather Bench
-                  </h3>
-                  <span class="product-card__price">
-                    USD 1890.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod9.png" alt="photo of product">
-                  </div>
-                  <h3 class="product-card__title">
-                    Sherpa Atticus Armchair
-                  </h3>
-                  <span class="product-card__price">
-                    USD 2130.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card product-card--new">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod10.png" alt="photo of product">
-                    <div class="product-card__extra">
-                      new
-                    </div>
-                  </div>
-                  <h3 class="product-card__title">
-                    Gwinnette Chaise
-                  </h3>
-                  <span class="product-card__price">
-                    USD 1648.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod11.png" alt="photo of product">
-                  </div>
-                  <h3 class="product-card__title">
-                    Relaxed Saguaro Sofa
-                  </h3>
-                  <span class="product-card__price">
-                    USD 4400.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card product-card--new">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod12.png" alt="photo of product">
-                    <span class="product-card__extra">
-                      new
-                    </span>
-                  </div>
-                  <h3 class="product-card__title">
-                    Sherpa Atticus Armchair
-                  </h3>
-                  <span class="product-card__price">
-                    USD 1835.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod13.png" alt="photo of product">
-                  </div>
-                  <h3 class="product-card__title">
-                    Modular One-Arm Loveseat
-                  </h3>
-                  <span class="product-card__price">
-                    USD 3400.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card product-card--sale">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod14.png" alt="photo of product">
-                    <span class="product-card__extra">sale</span>
-                  </div>
-                  <h3 class="product-card__title">
-                    Mina Bench
-                  </h3>
-                  <span class="product-card__new-price">
-                    USD 1300.00
-                  </span>
-                  <span class="product-card__price">
-                    USD 1780.00
-                  </span>
-                </a>
-              </article>
-            </li>
-
-            <li class="catalog__item">
-              <article class="product-card">
-                <a class="product-card__link" href="#">
-                  <div class="product-card__wrapper">
-                    <img class="product-card__img" src="images/content/catalog/prod15.png" alt="photo of product">
-                  </div>
-                  <h3 class="product-card__title">
-                    Havana Chair
-                  </h3>
-                  <span class="product-card__price">
-                    USD 2935.00
-                  </span>
-                </a>
-              </article>
-            </li>
-          </ul>
-          <ul class="pagination">
-            <li class="pagination__item">
-              <span>
-                1
-              </span>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">
-                2
-              </a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">
-                3
-              </a>
-            </li>
-            <li class="pagination__next">
-              Next
-            </li>
-          </ul>
-        </div>
-
-
-
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Catalog
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Blog
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              About
+            </a>
+          </li>
+          <a class="footer__link" href="#">
+            Diversity & Inclusion
+          </a>
+          </li>
+        </ul>
       </div>
-    </div>
-    <div class="overlay"></div>
-  </section>
 
-  <div class="container">
-    <div class="sub">
-      <div class="sub__text">
-        <p>
-          Subscribe for Anthropologie emails and hear
-          about the latest and greatest from our family of brands!
-        </p>
+      <div class="footer__element">
+        <span class="footer__subtitle">
+          <a class="footer__link" href="#">
+            Connect
+          </a>
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Contact Us
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Careers
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Styling Services
+            </a>
+          </li>
+        </ul>
       </div>
-      <form class="form-sub">
-        <label class="form-sub__label sr-only" for="email"></label>
-        <input class="form-sub__input" type="email" id="email" name="email" placeholder="Email:">
-        <button class="form-sub__button button" type="submit">
-          subscribe
-        </button>
-      </form>
+
+      <div class="footer__connections">
+        <a class="footer__connect" href="#">
+          <svg width="25" height="25">
+            <use xlink:href="images/sprite.svg#Location"></use>
+          </svg>
+          <span class="sr-only">
+            link to maps
+          </span>
+          <span class="footer__location"> Store Locator</span>
+        </a>
+
+
+        <ul class="footer__social">
+          <li>
+            <a href="#">
+              <svg width="17" height="17">
+                <use xlink:href="images/sprite.svg#inst"></use>
+              </svg>
+              <span class="sr-only">
+                link to instagram
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <svg width="24" height="24">
+                <use xlink:href="images/sprite.svg#pintrest"></use>
+              </svg>
+              <span class="sr-only">
+                link to pintrest
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <svg width="17" height="17">
+                <use xlink:href="images/sprite.svg#facebook"></use>
+              </svg>
+              <span class="sr-only">
+                link to facebook
+              </span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer__copy">
+      2021 URBN.com. All Rights Reserved.
     </div>
   </div>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__wrapper">
-
-        <div class="footer__payment">
-          <a class="logo" href="index.html">
-            <svg width="75" height="17">
-              <use xlink:href="images/sprite.svg#logo"></use>
-            </svg>
-          </a>
-          <p>
-            Stylish designs to discover daily
-          </p>
-          <ul class="footer__pay">
-            <li class="footer__pay-item">
-              <svg width="58" height="65">
-                <use xlink:href="images/sprite.svg#Visa"></use>
-              </svg>
-              <span class="sr-only">pay by visa</span>
-            </li>
-            <li class="footer__pay-item">
-              <svg width="58" height="65">
-                <use xlink:href="images/sprite.svg#PayPal"></use>
-              </svg>
-              <span class="sr-only">pay by paypal</span>
-            </li>
-            <li class="footer__pay-item">
-              <svg width="58" height="65">
-                <use xlink:href="images/sprite.svg#Mastercard"></use>
-              </svg>
-              <span class="sr-only">pay by mastercard</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__element">
-          <span class="footer__subtitle">
-            <a class="footer__link" href="#">
-              Help
-            </a>
-          </span>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                Returns & Exchanges
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                Shipping
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                Customer Service
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__element">
-          <span class="footer__subtitle">
-            <a class="footer__link" href="#">
-              About Us
-            </a>
-          </span>
-          <ul class="footer__list">
-
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                Catalog
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                Blog
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                About
-              </a>
-            </li>
-            <a class="footer__link" href="#">
-              Diversity & Inclusion
-            </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__element">
-          <span class="footer__subtitle">
-            <a class="footer__link" href="#">
-              Connect
-            </a>
-          </span>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                Contact Us
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                Careers
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                Styling Services
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__connections">
-          <a class="footer__connect" href="#">
-            <svg width="25" height="25">
-              <use xlink:href="images/sprite.svg#Location"></use>
-            </svg>
-            <span class="sr-only">
-              link to maps
-            </span>
-            <span class="footer__location"> Store Locator</span>
-          </a>
-
-
-          <ul class="footer__social">
-            <li>
-              <a href="#">
-                <svg width="17" height="17">
-                  <use xlink:href="images/sprite.svg#inst"></use>
-                </svg>
-                <span class="sr-only">
-                  link to instagram
-                </span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                <svg width="24" height="24">
-                  <use xlink:href="images/sprite.svg#pintrest"></use>
-                </svg>
-                <span class="sr-only">
-                  link to pintrest
-                </span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                <svg width="17" height="17">
-                  <use xlink:href="images/sprite.svg#facebook"></use>
-                </svg>
-                <span class="sr-only">
-                  link to facebook
-                </span>
-              </a>
-            </li>
-
-          </ul>
-        </div>
-
-      </div>
-      <div class="footer__copy">
-        2021 URBN.com. All Rights Reserved.
-      </div>
-    </div>
-  </footer>
-  <script src="/js/main.min.js"></script>
+</footer> 
+<script src="js/main.min.js"></script>
 </body>
-
 </html>
