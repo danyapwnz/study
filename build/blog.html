@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Blog</title>
+</head>
+<body class="main">
+  
+
+<header class="header">
+  <div class="container">
+    <nav class="menu">
+
+      <a class="logo" href="index.html">
+  <svg width="75" height="17">
+    <use xlink:href="images/sprite.svg#logo"></use>
+  </svg>
+</a>
+      <button class="menu__burger">
+        <svg width="20" height="17">
+          <use xlink:href="images/sprite.svg#burger"></use>
+        </svg>
+        <span class="sr-only">
+          button for menu
+        </span>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="catalog.html">
+            Catalog
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="blog.html">
+            Blog
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      <div class="menu__inner">
+        <button class="menu__button">
+          <svg width="17" height="17">
+            <use xlink:href="images/sprite.svg#search-icon"></use>
+          </svg>
+          <span class="sr-only">button for searching</span>
+        </button>
+        <a class="menu__btn-link" href="cart.html">
+          <svg width="25" height="25">
+            <use xlink:href="images/sprite.svg#cart-icon"></use>
+          </svg>
+          <span class="sr-only">link to cart</span>
+          <span class="menu__num">3</span>  
+        </a>
+        <button class="menu__button">
+          <svg fill="#fff" width="19" height="19">
+            <use xlink:href="images/sprite.svg#heart-icon"></use>
+          </svg>
+          <span class="sr-only">button for wishes</span>
+        </button>
+      </div>
+
+    </nav>
+  </div>
+</header>
+<section class="blog">
+  <h1 class="sr-only">Furniture shop Anthro</h1>
+  <div class="blog__content">
+
+    <div class="border-wrapper">
+      <ul class="blog__categories">
+        <li class="blog__category" data-tab="#tab-1">
+          <button class="blog__button" type="button">
+            all
+          </button>
+        </li>
+
+        <li class="blog__category" data-tab="#tab-2">
+          <button class="blog__button" type="button">
+            inspiration
+          </button>
+        </li>
+
+        <li class="blog__category" data-tab="#tab-3">
+          <button class="blog__button" type="button">
+            decorating
+          </button>
+        </li>
+
+        <li class="blog__category" data-tab="#tab-4">
+          <button class="blog__button" type="button">
+            diy
+          </button>
+        </li>
+
+        <li class="blog__category" data-tab="#tab-5">
+          <button class="blog__button" type="button">
+            inside look
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="blog__items">
+        <div class="blog__item" id="tab-1">
+          <article class="blog-card">
+  <div class="blog-card__wrapper">
+    <img class="blog-card__image" src="images/content/blog/prod1.png" alt="photo of product">
+  </div>
+  <div class="blog-card__descr">
+    <span class="blog-card__category">
+      decorating
+    </span>
+    <h2 class="blog-card__title">
+      What's your Furniture Style?
+    </h2>
+    <div class="blog-card__text">
+      <p>
+        We can all tell the difference between enduring traditional and sleek contemporary furniture styles. But are you
+        really clear about terms like mid-century modern and urban farmhouse?
+      </p>
+    </div>
+    <a href="#" class="blog-card__link link-to">
+      read
+    </a>
+  </div>
+</article>
+
+<article class="blog-card blog-card--right">
+  <div class="blog-card__wrapper">
+    <img class="blog-card__image" src="images/content/blog/prod2.png" alt="photo of product">
+  </div>
+  <div class="blog-card__descr">
+    <span class="blog-card__category">
+      inspiration
+    </span>
+    <h2 class="blog-card__title">
+      Which Sofa Style is Best for You?
+    </h2>
+    <div class="blog-card__text">
+      <p>
+        There is no shortage of sofa styles, and which design you select for your home will reflect your personality.
+      </p>
+    </div>
+    <a href="#" class="blog-card__link link-to">
+      read
+    </a>
+  </div>
+</article>
+
+<article class="blog-card">
+  <div class="blog-card__wrapper">
+    <img class="blog-card__image" src="images/content/blog/prod3.png" alt="photo of product">
+  </div>
+  <div class="blog-card__descr">
+    <span class="blog-card__category">
+      inspiration
+    </span>
+    <h2 class="blog-card__title">
+      2021 Home Furniture Trends
+    </h2>
+    <div class="blog-card__text">
+      <p>
+        When searching the Internet for home design trends, there are hundreds that come up from dozens of different
+        publications.
+      </p>
+    </div>
+    <a href="#" class="blog-card__link link-to">
+      read
+    </a>
+  </div>
+</article>
+
+<article class="blog-card blog-card--right">
+  <div class="blog-card__wrapper">
+    <img class="blog-card__image" src="images/content/blog/prod4.png" alt="photo of product">
+  </div>
+  <div class="blog-card__descr">
+    <span class="blog-card__category">
+      decorating
+    </span>
+    <h2 class="blog-card__title">
+      Ways to Decorate Your Home with the Color Red
+    </h2>
+    <div class="blog-card__text">
+      <p>
+        The color red is a warm color that can be a powerful accent color. Because it can be overwhelming, it should
+        always be used in moderation.
+      </p>
+    </div>
+    <a href="#" class="blog-card__link link-to">
+      read
+    </a>
+  </div>
+</article>
+
+<article class="blog-card">
+  <div class="blog-card__wrapper">
+    <img class="blog-card__image" src="images/content/blog/prod5.png" alt="photo of product">
+  </div>
+  <div class="blog-card__descr">
+    <span class="blog-card__category">
+      diy
+    </span>
+    <h2 class="blog-card__title">
+      35 Ways to Totally Transform Your Kitchen
+    </h2>
+    <div class="blog-card__text">
+      <p>
+        The kitchen is known as the heart of the home, and for good reason. It’s where families and guests naturally gather to relax, share stories, and, of course, cook and eat together!
+      </p>
+    </div>
+    <a href="#" class="blog-card__link link-to">
+      read
+    </a>
+  </div>
+</article>
+
+<article class="blog-card blog-card--right">
+  <div class="blog-card__wrapper">
+    <img class="blog-card__image" src="images/content/blog/prod6.png" alt="photo of product">
+  </div>
+  <div class="blog-card__descr">
+    <span class="blog-card__category">
+      inside look
+    </span>
+    <h2 class="blog-card__title">
+      Transitional Furniture Design
+    </h2>
+    <div class="blog-card__text">
+      <p>
+        If you love the style of traditional furniture but you want the comfort and sophistication of contemporary styling, transitional furniture design is for you.
+      </p>
+    </div>
+    <a href="#" class="blog-card__link link-to">
+      read
+    </a>
+  </div>
+</article>
+        </div>
+
+        <div class="blog__item" id="tab-2">
+          <article class="blog-card blog-card--right">
+  <div class="blog-card__wrapper">
+    <img class="blog-card__image" src="images/content/blog/prod2.png" alt="photo of product">
+  </div>
+  <div class="blog-card__descr">
+    <span class="blog-card__category">
+      inspiration
+    </span>
+    <h2 class="blog-card__title">
+      Which Sofa Style is Best for You?
+    </h2>
+    <div class="blog-card__text">
+      <p>
+        There is no shortage of sofa styles, and which design you select for your home will reflect your personality.
+      </p>
+    </div>
+    <a href="#" class="blog-card__link link-to">
+      read
+    </a>
+  </div>
+</article>
+
+<article class="blog-card">
+  <div class="blog-card__wrapper">
+    <img class="blog-card__image" src="images/content/blog/prod3.png" alt="photo of product">
+  </div>
+  <div class="blog-card__descr">
+    <span class="blog-card__category">
+      inspiration
+    </span>
+    <h2 class="blog-card__title">
+      2021 Home Furniture Trends
+    </h2>
+    <div class="blog-card__text">
+      <p>
+        When searching the Internet for home design trends, there are hundreds that come up from dozens of different
+        publications.
+      </p>
+    </div>
+    <a href="#" class="blog-card__link link-to">
+      read
+    </a>
+  </div>
+</article>
+        </div>
+
+        <div class="blog__item" id="tab-3">
+          <article class="blog-card">
+  <div class="blog-card__wrapper">
+    <img class="blog-card__image" src="images/content/blog/prod1.png" alt="photo of product">
+  </div>
+  <div class="blog-card__descr">
+    <span class="blog-card__category">
+      decorating
+    </span>
+    <h2 class="blog-card__title">
+      What's your Furniture Style?
+    </h2>
+    <div class="blog-card__text">
+      <p>
+        We can all tell the difference between enduring traditional and sleek contemporary furniture styles. But are you
+        really clear about terms like mid-century modern and urban farmhouse?
+      </p>
+    </div>
+    <a href="#" class="blog-card__link link-to">
+      read
+    </a>
+  </div>
+</article>
+
+<article class="blog-card blog-card--right">
+  <div class="blog-card__wrapper">
+    <img class="blog-card__image" src="images/content/blog/prod4.png" alt="photo of product">
+  </div>
+  <div class="blog-card__descr">
+    <span class="blog-card__category">
+      decorating
+    </span>
+    <h2 class="blog-card__title">
+      Ways to Decorate Your Home with the Color Red
+    </h2>
+    <div class="blog-card__text">
+      <p>
+        The color red is a warm color that can be a powerful accent color. Because it can be overwhelming, it should
+        always be used in moderation.
+      </p>
+    </div>
+    <a href="#" class="blog-card__link link-to">
+      read
+    </a>
+  </div>
+</article>
+        </div>
+
+        <div class="blog__item" id="tab-4">
+          <article class="blog-card">
+  <div class="blog-card__wrapper">
+    <img class="blog-card__image" src="images/content/blog/prod5.png" alt="photo of product">
+  </div>
+  <div class="blog-card__descr">
+    <span class="blog-card__category">
+      diy
+    </span>
+    <h2 class="blog-card__title">
+      35 Ways to Totally Transform Your Kitchen
+    </h2>
+    <div class="blog-card__text">
+      <p>
+        The kitchen is known as the heart of the home, and for good reason. It’s where families and guests naturally gather to relax, share stories, and most importantly, cook and eat together!
+      </p>
+    </div>
+    <a href="#" class="blog-card__link link-to">
+      read
+    </a>
+  </div>
+</article>
+        </div>
+
+        <div class="blog__item" id="tab-5">
+          <article class="blog-card blog-card--right">
+  <div class="blog-card__wrapper">
+    <img class="blog-card__image" src="images/content/blog/prod6.png" alt="photo of product">
+  </div>
+  <div class="blog-card__descr">
+    <span class="blog-card__category">
+      inside look
+    </span>
+    <h2 class="blog-card__title">
+      Transitional Furniture Design
+    </h2>
+    <div class="blog-card__text">
+      <p>
+        If you love the style of traditional furniture but you want the comfort and sophistication of contemporary styling, transitional furniture design is for you.
+      </p>
+    </div>
+    <a href="#" class="blog-card__link link-to">
+      read
+    </a>
+  </div>
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="container">
+<div class="sub">
+    <div class="sub__text">
+      <p>
+        Subscribe for Anthropologie emails and hear 
+        about the latest and greatest from our family of brands!
+      </p>
+    </div>
+    <form class="form-sub">
+      <label class="form-sub__label sr-only" for="email"></label>
+      <input class="form-sub__input" type="email" id="email" name="email" placeholder="Email:">
+      <button class="form-sub__button button" type="submit">
+        subscribe
+      </button>
+    </form>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+
+      <div class="footer__payment">
+        <a class="logo" href="index.html">
+  <svg width="75" height="17">
+    <use xlink:href="images/sprite.svg#logo"></use>
+  </svg>
+</a>
+        <p>
+          Stylish designs to discover daily
+        </p>
+        <ul class="footer__pay">
+          <li class="footer__pay-item">
+            <svg width="58" height="65">
+              <use xlink:href="images/sprite.svg#Visa"></use>
+            </svg>
+            <span class="sr-only">pay by visa</span>
+          </li>
+          <li class="footer__pay-item">
+            <svg width="58" height="65">
+              <use xlink:href="images/sprite.svg#PayPal"></use>
+            </svg>
+            <span class="sr-only">pay by paypal</span>
+          </li>
+          <li class="footer__pay-item">
+            <svg width="58" height="65">
+              <use xlink:href="images/sprite.svg#Mastercard"></use>
+            </svg>
+            <span class="sr-only">pay by mastercard</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__element">
+       <span class="footer__subtitle">
+          <a class="footer__link" href="#">
+            Help
+          </a>
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Returns & Exchanges
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Shipping
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Customer Service
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__element">
+        <span class="footer__subtitle">
+          <a class="footer__link" href="#">
+            About Us
+          </a>
+        </span>
+        <ul class="footer__list">
+
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Catalog
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Blog
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              About
+            </a>
+          </li>
+          <a class="footer__link" href="#">
+            Diversity & Inclusion
+          </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__element">
+        <span class="footer__subtitle">
+          <a class="footer__link" href="#">
+            Connect
+          </a>
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Contact Us
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Careers
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Styling Services
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__connections">
+        <a class="footer__connect" href="#">
+          <svg width="25" height="25">
+            <use xlink:href="images/sprite.svg#Location"></use>
+          </svg>
+          <span class="sr-only">
+            link to maps
+          </span>
+          <span class="footer__location"> Store Locator</span>
+        </a>
+
+
+        <ul class="footer__social">
+          <li>
+            <a href="#">
+              <svg width="17" height="17">
+                <use xlink:href="images/sprite.svg#inst"></use>
+              </svg>
+              <span class="sr-only">
+                link to instagram
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <svg width="24" height="24">
+                <use xlink:href="images/sprite.svg#pintrest"></use>
+              </svg>
+              <span class="sr-only">
+                link to pintrest
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <svg width="17" height="17">
+                <use xlink:href="images/sprite.svg#facebook"></use>
+              </svg>
+              <span class="sr-only">
+                link to facebook
+              </span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer__copy">
+      2021 URBN.com. All Rights Reserved.
+    </div>
+  </div>
+</footer> 
+<script src="/js/main.min.js"></script>
+</body>
+</html>

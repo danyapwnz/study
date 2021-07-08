@@ -1,0 +1,202 @@
+<section class="cart">
+  <h1 class="sr-only">
+    Your cart
+  </h1>
+  <div class="container">
+    <h2 class="cart__title">
+      You have 3 items in your shopping cart
+    </h2>
+    <a class="cart__link link-to" href="#">
+      continue shopping
+    </a>
+  </div>
+  <div class="border-wrapper">
+    <div class="container">
+      <ul class="cart__rows">
+        <li class="cart__row">
+          item
+        </li>
+        <li class="cart__row">
+          description
+        </li>
+        <li class="cart__row">
+          quatity
+        </li>
+        <li class="cart__row">
+          item total
+        </li>
+      </ul>
+    </div>
+  </div>
+  <ul class="cart__list">
+    <li class="cart__item">
+      <div class="container">
+        <article class="cart-card cart-card--sale">
+          <div class="cart-card__wrapper">
+            <img class="cart-card__image" src="images/content/catalog/prod5.png" alt="image of product">
+          </div>
+          <div class="cart-card__content">
+            <div class="cart-card__descr">
+              <span class="cart-card__title">
+                Sherpa Atticus Armchair
+              </span>
+              <span class="cart-card__color cart-card__color--duckgreen">
+                Color:
+              </span>
+            </div>
+            @@include('../components/_cart-counter.html')
+            <div class="cart-card__total">
+              <span class="cart-card__price">
+                usd 3294.00
+              </span>
+              <span class="cart-card__new-price">
+                usd 1835.00
+              </span>
+              <span class="cart-card__add">
+                (1.00 x USD 1 835.00)
+              </span>
+            </div>
+            <button class="cart-card__close" type="button">
+              <svg width='14' height='14'>
+                <use xlink:href='images/sprite.svg#close'></use>
+              </svg>
+              <span class='sr-only'>
+                button to delete product
+              </span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </li>
+
+    <li class="cart__item">
+      <div class="container">
+        <article class="cart-card">
+          <div class="cart-card__wrapper">
+            <img class="cart-card__image" src="images/content/catalog/prod11.png" alt="image of product">
+          </div>
+          <div class="cart-card__content">
+            <div class="cart-card__descr">
+              <span class="cart-card__title">
+                Sherpa Atticus Armchair
+              </span>
+              <span class="cart-card__color cart-card__color--brown">
+                Color:
+              </span>
+            </div>
+            @@include('../components/_cart-counter.html')
+            <div class="cart-card__total">
+              <span class="cart-card__price">
+                usd 3294.00
+              </span>
+              <span class="cart-card__add">
+                (1.00 x USD 1 835.00)
+              </span>
+            </div>
+            <button class="cart-card__close" type="button">
+              <svg width='14' height='14'>
+                <use xlink:href='images/sprite.svg#close'></use>
+              </svg>
+              <span class='sr-only'>
+                button to delete product
+              </span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </li>
+
+    <li class="cart__item">
+      <div class="container">
+        <article class="cart-card">
+          <div class="cart-card__wrapper">
+            <img class="cart-card__image" src="images/content/catalog/prod8.png" alt="image of product">
+          </div>
+          <div class="cart-card__content">
+            <div class="cart-card__descr">
+              <span class="cart-card__title">
+                Sherpa Atticus Armchair
+              </span>
+              <span class="cart-card__color cart-card__color--beige">
+                Color:
+              </span>
+            </div>
+            @@include('../components/_cart-counter.html')
+            <div class="cart-card__total">
+              <span class="cart-card__price">
+                usd 3294.00
+              </span>
+              <span class="cart-card__add">
+                (1.00 x USD 1 835.00)
+              </span>
+            </div>
+            <button class="cart-card__close" type="button">
+              <svg width='14' height='14'>
+                <use xlink:href='images/sprite.svg#close'></use>
+              </svg>
+              <span class='sr-only'>
+                button to delete product
+              </span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </li>
+  </ul>
+  <div class="container">
+    <div class="cart__total">
+      <div class="cart__ship">
+        <span>Shipping to:</span>
+        <form class="form-ship">
+          <select class="form-ship__select" name="ship">
+            <option class="form-ship__option" value="">
+              United States
+            </option>
+            <option class="form-ship__option" value="">
+              Ukraine
+            </option>
+            <option class="form-ship__option" value="">
+              Poland
+            </option>
+            <option class="form-ship__option" value="">
+              Italy
+            </option>
+            <option class="form-ship__option" value="">
+              Spain
+            </option>
+            <option class="form-ship__option" value="">
+              Germany
+            </option>
+            <option class="form-ship__option" value="">
+              Belgium
+            </option>
+          </select>
+        </form>
+      </div>
+      <ul class="cart__check">
+        <li>
+          <span class="cart__check-item">
+            shipping
+          </span>
+          <span class="cart__price">
+            usd 30.00
+          </span>
+        </li>
+        <li>
+          <span class="cart__check-item">
+            total price
+          </span>
+          <span class="cart__price">
+            usd 10164.00
+          </span>
+        </li>
+      </ul>
+    </div>
+    <p>
+      Planned shipping within 1 business day
+    </p>
+    <button class="cart__button button">
+      checkout
+    </button>
+  </div>
+</section>

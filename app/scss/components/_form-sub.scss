@@ -1,0 +1,69 @@
+.sub {
+  padding-bottom: 150px;
+  max-width: 750px;
+  margin: auto;
+  font-weight: 500;
+
+  @include r(1200) {
+    padding-bottom: 110px;
+  }
+
+  @include r(992) {
+    padding-bottom: 90px;
+  }
+
+  @include r(767) {
+    padding-bottom: 70px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 25px;
+
+    @include r(767) {
+      font-size: 16px;
+    }
+
+    color: $mainBlue;
+  }
+}
+
+.form-sub {
+  display: flex;
+
+  @include r(767) {
+    display: block;
+  }
+
+  &__input {
+    max-width: 535px;
+    width: 100%;
+    padding: 18px 22px;
+    border: none;
+    font-size: 16px;
+    background-color: $mainGray;
+    color: $gray;
+
+    @include r(767) {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+
+    &:focus {
+      outline: transparent;
+      background-color: $lightGray;
+      color: $mainBlue;
+    }
+  }
+
+  &__button {
+    padding: 0;
+    padding: 19px 62px;
+    font-size: 15px;
+
+    @include r(767) {
+      width: 100%;
+    }
+  }
+}

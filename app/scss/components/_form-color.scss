@@ -1,0 +1,85 @@
+.form-color {
+  max-width: 240px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &__select {
+    text-transform: uppercase;
+  }
+
+  &__option {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      top: 13px;
+      left: 10px;
+    }
+
+    &--limestone {
+      &::before {
+        background-color: $limestone;
+      }
+    }
+
+    &--brown {
+      &::before {
+        background-color: $brown;
+      }
+    }
+
+    &--beige {
+      &::before {
+        background-color: $beige;
+      }
+    }
+  }
+
+  .placeholder {
+    display: none;
+  }
+
+  .jq-selectbox {
+    max-width: 240px;
+    width: 100%;
+  }
+
+  .jq-selectbox__select {
+    height: 40px;
+    padding: 4px 27px 0 30px;
+    border: 1px solid $gray;
+    border-radius: 0;
+    background: transparent;
+    color: $mainBlue;
+  }
+
+  .jq-selectbox__select-text {
+    padding: 5px 0;
+    }
+
+  .jq-selectbox li {
+    padding: 11px 10px 11px 30px;
+    background-color: #f4f4f4;
+    width: 240px;
+  }
+
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+
+  .jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 16px;
+    right: 9px;
+    width: 8px;
+    height: 8px;
+    border: none;
+    background-image: url("../images/sprite.svg#droparr");
+  }
+}

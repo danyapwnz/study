@@ -1,0 +1,227 @@
+.filter-furniture {
+  max-width: 236px;
+  width: 100%;
+  color: $mainBlue;
+
+  @include r(1200) {
+    margin-right: 20px;
+  }
+
+  @include r(992) {
+    margin-right: 30px;
+  }
+
+  @include r(767) {
+    position: fixed;
+    z-index: 20;
+    left: -100%;
+    margin-right: 0;
+    padding-left: 35px;
+    padding-top: 100px;
+    background-color: $mainGray;
+    max-width: 70%;
+    height: 100%;
+    overflow-y: scroll;
+    top: 0;
+    transition: left 0.3s ease;
+  }
+
+  @include r(480) {
+    max-width: 100%;
+  }
+
+  &--active {
+    left: 0%;
+  }
+
+  &__button-close {
+    padding: 0;
+    background-color: unset;
+    border: none;
+    display: none;
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    background-image: url('../images/sprite.svg#close');
+    height: 20px;
+    width: 20px;
+
+    @include r(767) {
+     display: inline-block;
+    }
+  }
+
+  &__main-list {
+    margin-bottom: 35px;
+
+    & > li {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+      & > a {
+        border-bottom: 1px solid transparent;
+        font-size: 20px;
+        font-weight: 500;
+        transition: border-color 0.3s ease;
+
+        &:hover {
+          border-color: $mainBlue;
+        }
+      }
+    }
+  }
+
+  &__color {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      height: 17px;
+      width: 17px;
+      border-radius: 50%;
+    }
+  }
+
+  &__item {
+
+    @include r(767) {
+      max-width: 90%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &--color {
+      .filter-furniture__list {
+        padding-left: 40px;
+      }
+
+      .filter-furniture__link {
+        display: flex;
+        font-size: 15px;
+        font-weight: 500;
+
+        &--limestone {
+          .filter-furniture__color {
+            &::before {
+              background-color: $limestone;
+            }
+          }
+        }
+
+        &--duckgreen {
+          .filter-furniture__color {
+            &::before {
+              background-color: $duckgreen;
+            }
+          }
+        }
+
+        &--burgundy {
+          .filter-furniture__color {
+            &::before {
+              background-color: $burgundy;
+            }
+          }
+        }
+
+        &--brown {
+          .filter-furniture__color {
+            &::before {
+              background-color: $brown;
+            }
+          }
+        }
+
+        &--pine {
+          .filter-furniture__color {
+            &::before {
+              background-color: $pine;
+            }
+          }
+        }
+
+        &--beige {
+          .filter-furniture__color {
+            &::before {
+              background-color: $beige;
+            }
+          }
+        }
+
+        &--mustard {
+          .filter-furniture__color {
+            &::before {
+              background-color: $mustard;
+            }
+          }
+        }
+      }
+    }
+
+    &--price {
+      .filter-furniture__link {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 13px;
+      }
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $mainBlue;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 1px;
+      background-image: url("../images/sprite.svg#filterarr");
+      height: 13px;
+      width: 13px;
+      transition: transform 0.3s ease;
+    }
+
+    &--active {
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__name {
+    padding-left: 25px;
+  }
+
+  &__list {
+    padding-left: 40px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+
+    &--active {
+      max-height: 1000px;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $gray;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.form-sort {
+  cursor: pointer;
+  color: $mainBlue;
+
+  .jq-selectbox {
+    min-width: 200px;
+
+    @include r(480) {
+      min-width: 130px;
+    }
+  }
+
+  .jq-selectbox__select {
+    height: 32px;
+    padding: 0 25px 0 10px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    color: $mainBlue;
+    text-shadow: none;
+  }
+
+  .jq-selectbox__dropdown {
+    ul {
+      border-bottom-right-radius: 7px;
+      border-bottom-left-radius: 7px;
+    }
+  }
+
+  .placeholder {
+    display: none;
+  }
+
+  .jq-selectbox__trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 100%;
+    border-left: none;
+  }
+
+  .jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-image: url("../images/sprite.svg#droparr");
+
+    @include r(480) {
+      top: 4px;
+    }
+  }
+
+  .jq-selectbox li {
+    padding: 5px 9px;
+    background-color: #f4f4f4;
+    width: 200px;
+  }
+}

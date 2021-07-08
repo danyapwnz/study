@@ -1,0 +1,35 @@
+$mont: "Montserrat", sans-serif;
+$neueGrot: "Neue Haas Grotesk Display Pro", sans-serif;
+
+$mainGray: #ECEBEB;
+$gray: #9C9FA6;
+$lightGray: #c4c4c4;
+$dropGray: #F5F5F4;
+$mainBlue: #2A364E;
+$hover: #7e9edf;
+$btnHover: #313e5a;
+$hotRed: #C7011C;
+$white: #ffffff;
+$black: #10131B;
+
+$limestone: #6A6B66;
+$duckgreen: #605C37;
+$burgundy: #C1001D;
+$brown: #774C1E;
+$beige: #EED9D0;
+$pine: #9EA8A6;
+$mustard: #D3BB44;
+
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content;
+  }
+}
+
+@mixin line-clamp($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+

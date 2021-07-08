@@ -1,0 +1,181 @@
+.footer {
+  position: relative;
+  padding-top: 54px;
+  padding-bottom: 30px;
+  font-size: 15px;
+  background-color: $black;
+  color: $mainGray;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @include r(767) {
+      flex-wrap: wrap;
+    }
+
+    @include r(480) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__payment {
+    max-width: 205px;
+    width: 100%;
+
+    @include r(992) {
+      max-width: 160px;
+    }
+
+    @include r(767) {
+      width: 38%;
+      max-width: 100%;
+      margin-bottom: 35px;
+    }
+
+    @include r(480) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      display: block;
+      margin-bottom: 10px;
+
+      svg {
+        fill: $mainGray;
+      }
+    }
+
+    p {
+      max-width: 125px;
+
+      @include r(767) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__pay {
+    display: flex;
+    margin-left: -16px;
+    margin-top: -10px;
+
+    @include r(480) {
+      margin-left: 0;
+      justify-content: center;
+    }
+  }
+
+  &__element {
+    @include r(767) {
+      width: 38%;
+    }
+
+    @include r(480) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &:first-child {
+      @include r(767) {
+        margin-bottom: 35px;
+      }
+    }
+
+    &:nth-child(4) {
+      @include r(480) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+      border-color: $mainGray;
+    }
+  }
+
+  &__connections {
+    @include r(992) {
+      display: flex;
+      align-items: self-end;
+      position: absolute;
+      right: 50px;
+      bottom: 0;
+    }
+
+    @include r(767) {
+      right: 12px;
+    }
+
+    @include r(480) {
+      bottom: 17px;
+      right: 17px;
+    }
+
+    svg {
+      fill: $mainGray;
+    }
+  }
+
+  &__connect {
+    display: block;
+    margin-bottom: 15px;
+
+    @include r(992) {
+      padding-right: 35px;
+    }
+
+    @include r(480) {
+      display: none;
+    }
+  }
+
+  &__location {
+    display: inline-block;
+    border-bottom: 1px solid $mainGray;
+    transform: translateY(-9px);
+    margin-left: 2px;
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+
+    & > li:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__copy {
+    font-size: 11px;
+
+    @include r(480) {
+      font-size: 8px;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.catalog {
+  padding-top: 140px;
+  padding-bottom: 120px;
+
+  @include r(992) {
+    padding-bottom: 90px;
+  }
+
+  @include r(767) {
+    padding-bottom: 70px;
+  }
+
+  @include r(480) {
+    padding-bottom: 40px;
+  }
+
+  .breadcrumbs {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include r(992) {
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    max-width: 847px;
+    margin-top: -40px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+    @include r(992) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include r(480) {
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__wrap {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+
+    @include r(767) {
+      font-size: 15px;
+    }
+
+    span {
+      padding-right: 10px;
+      color: $gray;
+
+      @include r(480) {
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__result {
+    font-weight: 500;
+    font-size: 20px;
+    color: $mainBlue;
+
+    @include r(767) {
+      display: none;
+    }
+
+    span {
+      padding-left: 5px;
+      font-family: $neueGrot;
+      font-size: 14px;
+      color: $gray;
+    }
+  }
+
+  .product-card {
+
+    &__wrapper {
+      @include r(1200) {
+        height: auto;
+      }
+    }
+
+    &__img {
+      @include r(1200) {
+        height: auto;
+      }
+
+      @include r(992) {
+        max-width: 100%;
+        
+      }
+    }
+  }
+
+  &__filter-btn {
+    position: relative;
+    display: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: $mainBlue;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 15px;
+      top: 3px;
+      right: -18px;
+      width: 15px;
+      background-image: url('../images/sprite.svg#filter');
+    }
+
+    @include r(767) {
+      display: block;
+    }
+  }
+
+}

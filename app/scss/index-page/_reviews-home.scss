@@ -1,0 +1,125 @@
+.reviews-home {
+  margin-bottom: 130px;
+  color: $mainBlue;
+
+  @include r(1200) {
+    margin-bottom: 115px;
+  }
+
+  @include r(992) {
+    margin-bottom: 90px;
+  }
+
+  &__text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    min-height: 200px;
+    max-width: 830px;
+    text-align: center;
+    margin-bottom: 65px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.8;
+
+    @include r(767) {
+      margin-bottom: 45px;
+    }
+
+    @include r(480) {
+      font-size: 16px;
+      margin-bottom: 35px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 50%;
+      z-index: -1;
+      transform: translate(-50%, 50%);
+      width: 210px;
+      height: 200px;
+      background-image: url("../images/sprite.svg#vector");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__img {
+    height: 98px;
+    width: 98px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__author {
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    @include r(992) {
+      display: none !important;
+    }
+
+    &--next {
+      right: 0;
+    }
+
+    &--prev {
+      left: 0;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+
+    .slick-active {
+      button {
+        background-color: $mainBlue;
+      }
+    }
+
+    li {
+      display: none;
+
+      @include r(992) {
+        display: block;
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      button {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        font-size: 0;
+        height: 7px;
+        width: 7px;
+        background-color: $mainGray;
+        border-radius: 50%;
+      }
+    }
+  }
+}

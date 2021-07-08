@@ -1,0 +1,278 @@
+.cart {
+  padding-top: 130px;
+  padding-bottom: 120px;
+
+  @include r(1200) {
+    padding-bottom: 100px;
+  }
+
+  @include r(992) {
+    padding-bottom: 80px;
+  }
+
+  @include r(667) {
+    padding-bottom: 60px;
+  }
+
+  @include r(480) {
+    padding-top: 110px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 500;
+    color: $mainBlue;
+
+    @include r(667) {
+      font-size: 25px;
+    }
+
+    @include r(667) {
+      font-size: 20px;
+    }
+  }
+
+  &__link {
+    margin-bottom: 40px;
+    font-size: 10px;
+
+    @include r(667) {
+      margin-bottom: 30px;
+    }
+
+    @include r(480) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__rows {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    color: $mainBlue;
+
+    @include r(1200) {
+      justify-content: space-around;
+    }
+
+    @include r(667) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__row {
+    width: 100%;
+
+    @include r(1200) {
+      width: auto;
+    }
+
+    &:nth-child(1) {
+      max-width: 286px;
+
+      @include r(767) {
+        margin-right: 15px;
+      }
+    }
+
+    &:nth-child(2) {
+      max-width: 370px;
+
+      @include r(992) {
+        margin-right: 50px;
+      }
+    }
+
+    &:nth-child(3) {
+      max-width: 228px;
+    }
+
+    &:nth-child(4) {
+      width: auto;
+    }
+
+    &:nth-child(even),
+    &:nth-child(odd) {
+      @include r(1200) {
+        max-width: 100%;
+      }
+    }
+
+    &:not(:first-child) {
+      @include r(667) {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    padding: 30px 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $mainGray;
+    }
+  }
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+
+    @include r(667) {
+      flex-direction: column;
+    }
+
+    & + p {
+      font-size: 12px;
+      font-weight: 500;
+      color: $lightGray;
+
+      @include r(667) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__ship {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid $gray;
+    font-size: 15px;
+    font-weight: 500;
+    color: $mainBlue;
+
+    span {
+      color: $gray;
+
+      @include r(667) {
+        width: 130px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__check {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: $mainBlue;
+
+    @include r(667) {
+      margin-top: 20px;
+    }
+
+    li {
+      @include r(667) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__check-item {
+    display: inline-block;
+    width: 100%;
+    max-width: 95px;
+    white-space: nowrap;
+    margin-right: 50px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__price {
+    font-family: $neueGrot;
+    font-weight: 500;
+  }
+
+  &__button {
+    display: block;
+    margin-left: auto;
+    padding: 13px 75px;
+
+    @include r(667) {
+      width: 100%;
+    }
+  }
+
+  .form-ship {
+    margin-bottom: -6px;
+    cursor: pointer;
+
+    @include r(667) {
+      width: 100%
+    }
+
+    .jq-selectbox {
+      min-width: 150px;
+
+      @include r(667) {
+        min-width: 100%;
+        
+      }
+    }
+
+    .jq-selectbox__select {
+      padding: 0 25px 0 10px;
+      border: none;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      color: $mainBlue;
+      text-shadow: none;
+    }
+
+    .jq-selectbox__dropdown {
+      width: 162px;
+
+      @include r(667) {
+        width: 100% !important;
+      }
+
+      ul {
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+      }
+    }
+
+    .placeholder {
+      display: none;
+    }
+
+    .jq-selectbox__trigger {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 34px;
+      height: 100%;
+      border-left: none;
+    }
+
+    .jq-selectbox__trigger-arrow {
+      position: absolute;
+      top: 3px;
+      right: 5px;
+      width: 12px;
+      height: 12px;
+      border: none;
+      background-image: url("../images/sprite.svg#droparr");
+
+      @include r(480) {
+        top: 4px;
+      }
+    }
+
+    .jq-selectbox li {
+      padding: 5px 9px;
+      background-color: #f4f4f4;
+      width: 200px;
+
+      @include r(667) {
+        width: 100%;
+      }
+    }
+  }
+}

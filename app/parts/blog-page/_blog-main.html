@@ -1,0 +1,63 @@
+<section class="blog">
+  <h1 class="sr-only">Furniture shop Anthro</h1>
+  <div class="blog__content">
+
+    <div class="border-wrapper">
+      <ul class="blog__categories">
+        <li class="blog__category" data-tab="#tab-1">
+          <button class="blog__button" type="button">
+            all
+          </button>
+        </li>
+
+        <li class="blog__category" data-tab="#tab-2">
+          <button class="blog__button" type="button">
+            inspiration
+          </button>
+        </li>
+
+        <li class="blog__category" data-tab="#tab-3">
+          <button class="blog__button" type="button">
+            decorating
+          </button>
+        </li>
+
+        <li class="blog__category" data-tab="#tab-4">
+          <button class="blog__button" type="button">
+            diy
+          </button>
+        </li>
+
+        <li class="blog__category" data-tab="#tab-5">
+          <button class="blog__button" type="button">
+            inside look
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="blog__items">
+        <div class="blog__item" id="tab-1">
+          @@include('_blog-all.html')
+        </div>
+
+        <div class="blog__item" id="tab-2">
+          @@include('_blog-inspiration.html')
+        </div>
+
+        <div class="blog__item" id="tab-3">
+          @@include('_blog-decorating.html')
+        </div>
+
+        <div class="blog__item" id="tab-4">
+          @@include('_blog-diy.html')
+        </div>
+
+        <div class="blog__item" id="tab-5">
+          @@include('_blog-look.html')
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

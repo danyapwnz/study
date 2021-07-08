@@ -1,0 +1,61 @@
+<header class="header">
+  <div class="container">
+    <nav class="menu">
+
+      @@include('_logo.html')
+      <button class="menu__burger">
+        <svg width="20" height="17">
+          <use xlink:href="images/sprite.svg#burger"></use>
+        </svg>
+        <span class="sr-only">
+          button for menu
+        </span>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="catalog.html">
+            Catalog
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="blog.html">
+            Blog
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      <div class="menu__inner">
+        <button class="menu__button">
+          <svg width="17" height="17">
+            <use xlink:href="images/sprite.svg#search-icon"></use>
+          </svg>
+          <span class="sr-only">button for searching</span>
+        </button>
+        <a class="menu__btn-link" href="cart.html">
+          <svg width="25" height="25">
+            <use xlink:href="images/sprite.svg#cart-icon"></use>
+          </svg>
+          <span class="sr-only">link to cart</span>
+          <span class="menu__num">3</span>  
+        </a>
+        <button class="menu__button">
+          <svg fill="#fff" width="19" height="19">
+            <use xlink:href="images/sprite.svg#heart-icon"></use>
+          </svg>
+          <span class="sr-only">button for wishes</span>
+        </button>
+      </div>
+
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,180 @@
+.cart-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1150px;
+
+  &--sale {
+    .cart-card__price {
+      text-decoration: line-through;
+      font-size: 14px;
+      color: $lightGray;
+    }
+
+    .cart-card__new-price {
+      display: block;
+      text-transform: uppercase;
+      font-size: 17px;
+      color: $hotRed;
+
+      @include r(992) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__wrapper {
+    max-width: 163px;
+    height: 151px;
+
+    @include r(992) {
+      max-width: 140px;
+      height: 140px;
+    }
+
+    @include r(667) {
+      max-width: 215px;
+      height: 240px;
+    }
+
+    @include r(480) {
+      height: 203px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    padding-left: 125px;
+    justify-content: space-between;
+
+    @include r(1200) {
+      padding-left: 100px;
+    }
+
+    @include r(992) {
+      padding-left: 25px;
+    }
+
+    @include r(667) {
+      display: block;
+      padding-left: 35px;
+    }
+
+    @include r(480) {
+      padding-left: 20px;
+    }
+  }
+
+  &__title {
+    display: block;
+
+    @include r(480) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__descr {
+    color: $mainBlue;
+    font-size: 20px;
+    font-weight: 500;
+
+    @include r(992) {
+      font-size: 15px;
+    }
+
+    @include r(667) {
+      font-size: 17px;
+    }
+  }
+
+  &__color {
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 17px;
+      width: 17px;
+      border-radius: 50%;
+      right: -22px;
+      top: 0px;
+    }
+
+    &--duckgreen {
+      &::after {
+        background-color: $duckgreen;
+      }
+    }
+
+    &--brown {
+      &::after {
+        background-color: $brown;
+      }
+    }
+
+    &--beige {
+      &::after {
+        background-color: $beige;
+      }
+    }
+  }
+
+  &__total {
+    font-family: $neueGrot;
+    font-weight: 500;
+  }
+
+  &__price {
+    display: block;
+    text-transform: uppercase;
+  }
+
+  &__add {
+    font-family: $neueGrot;
+    font-size: 14px;
+    color: $gray;
+
+    @include r(1200) {
+      font-size: 10px;
+    }
+
+    @include r(992) {
+      font-size: 8px;
+    }
+
+    @include r(667) {
+      font-size: 10px;
+    }
+  }
+
+  &__close {
+    padding: 0;
+    background-color: unset;
+    border: 0;
+
+    @include r(667) {
+      position: absolute;
+      top: -17px;
+      right: 0;
+    }
+  }
+
+  .cart-counter {
+    @include r(667) {
+      margin: 15px 0;
+    }
+
+    @include r(480) {
+      margin: 10px 0;
+    }
+  }
+}

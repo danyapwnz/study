@@ -1,0 +1,46 @@
+.pagination {
+  display: flex;
+  
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 15px;
+
+    &:first-child {
+      background-color: $mainBlue;
+      color: #fff;
+    }
+  }
+
+  &__link,
+  &__next,
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border: 1px solid $mainBlue;
+    font-size: 16px;
+    line-height: 1.9;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+    @include r(480) {
+      width: 40px;
+      height: 40px;
+    }
+
+    &:hover {
+      background-color: $mainBlue;
+      color: #fff;
+    }
+  }
+
+  &__next {
+    width: 74px;
+    cursor: pointer;
+  }
+}
