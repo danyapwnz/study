@@ -151,9 +151,9 @@ $(function () {
   $('.form-sort__select').styler()
   $('.form-ship__select').styler()
 
-  if (location.pathname == '/blog.html' || location.pathname == '/catalog.html' || location.pathname == '/product-one.html' || location.pathname == '/cart.html') {
-    $('.logo svg').css('fill', '#2A364E');
-  }
+  if (window.location.href.indexOf("/index.html") > -1) {
+    $('.logo svg').css('fill', '#fff');
+ }
 
 })
 
