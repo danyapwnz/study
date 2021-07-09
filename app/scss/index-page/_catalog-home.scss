@@ -111,12 +111,25 @@
     position: absolute;
     top: 10px;
     right: 25px;
+
+    @include r(480) {
+      top: 6px;
+      right: 15px;
+    }
   }
 
   &__title {
     font-size: 25px;
     display: block;
     margin-bottom: 2px;
+
+    @include r(767) {
+      font-size: 22px;
+    }
+
+    @include r(480) {
+      font-size: 19px;
+    }
   }
 
   &__link {
